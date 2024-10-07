@@ -77,15 +77,10 @@ The application will run on `http://localhost:4000/` by default, but you can set
 
    ![Query Example](/images/image.png)
 
-5. The bot remembers context from previous messages. For example, if you ask:
+5. The bot remembers context from previous messages:
 
-   "What did I tell you my name was?"
+   ![Context Example](/images/image%202.png)
 
-   The bot will respond with:
-
-   "You mentioned that your name is Ojus."
-
-   ![Context Example](/images/image 2.png)
 
 6. If you want to use the bot in a chat or a channel, you can invoke the bot with a "/" command:
    Example:
