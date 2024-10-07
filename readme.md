@@ -21,24 +21,27 @@ Before you can use this chatbot, you'll need the following:
 
 First, clone the repository:
 
+```bash
 git clone https://github.com/zoom/zoom-chat-cohere.git
 cd zoom-chat-cohere
+```
 
 Next, install the required Node.js packages:
 
-    - npm install
-
-
+```bash
+npm install
+```
 ## Configuration
 
 You need to set up your environment variables. Create a `.env` file in the project root and add the following variables:
 
+``` bash
 ZOOM_CLIENT_ID=your_zoom_client_id
 ZOOM_CLIENT_SECRET=your_zoom_client_secret
 ZOOM_BOT_JID=your_zoom_bot_jid
 ZOOM_WEBHOOK_SECRET_TOKEN=your_zoom_webhook_secret_token
 COHERE_API_KEY=your_cohere_api_key
-
+```
 
 To obtain these variables:
 
