@@ -1,8 +1,8 @@
-const { callCohereAPI } = require('./cohere');async function handleZoomWebhook(req, res) {
+const { callOpenAIAPI } = require('./openai');async function handleZoomWebhook(req, res) {
   try {
     if (req.body.event === 'bot_notification') {
       console.log('Zoom Team Chat App message received.');
-      await callCohereAPI(req.body.payload);
+      await callOpenAIAPI(req.body.payload);
     } else if (req.body.event === 'bot_installed') {
       console.log('Zoom for Team Chat installed.');
     } else if (req.body.event === 'app_deauthorized') {
