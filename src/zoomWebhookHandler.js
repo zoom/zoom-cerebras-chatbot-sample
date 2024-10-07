@@ -1,8 +1,10 @@
-const { callOpenAIAPI } = require('./openai');async function handleZoomWebhook(req, res) {
+const { callCerebrasAPI } = require('./cerebras');
+
+async function handleZoomWebhook(req, res) {
   try {
     if (req.body.event === 'bot_notification') {
       console.log('Zoom Team Chat App message received.');
-      await callOpenAIAPI(req.body.payload);
+      await callCerebrasAPI(req.body.payload);
     } else if (req.body.event === 'bot_installed') {
       console.log('Zoom for Team Chat installed.');
     } else if (req.body.event === 'app_deauthorized') {

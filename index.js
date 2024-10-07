@@ -6,7 +6,7 @@ const { handleZoomWebhook } = require('./src/zoomWebhookHandler');
 
 const app = express();
 const port = process.env.PORT || 4000;
-const customEndpoint = process.env.CUSTOM_ENDPOINT_URL || '/openai';
+const customEndpoint = process.env.BOT_NOTIFICATION_URL;
 
 app.use(bodyParser.json());
 

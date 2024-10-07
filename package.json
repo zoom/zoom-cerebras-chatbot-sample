@@ -1,11 +1,11 @@
 {
-  "name": "zoom-openai-chatbot",
+  "name": "zoom-cerebras-chatbot",
   "version": "1.0.0",
-  "description": "A Zoom Team Chat bot powered by OpenAI's GPT model",
+  "description": "A Zoom Team Chat bot integrated with Cerebras AI for intelligent conversations",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -13,17 +13,11 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  },
-  "engines": {
-    "node": ">=12.0.0"
-  },
   "keywords": [
     "zoom",
     "chatbot",
-    "openai",
-    "gpt",
+    "cerebras",
+    "ai",
     "team-chat"
   ],
   "author": "Ojus Save",
