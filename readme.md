@@ -64,13 +64,13 @@ The application will run on `http://localhost:4000/` by default, but you can set
 
 3. To use the bot, type a message in the chat like this:
 
-   "Tell me some places to visit in San Francisco?"
-
-   ![Query Example](/images/Image%201.png)
+   "Tell me about the history of San Jose, California"
 
 4. The response from the bot will look like this:
 
-   [AI-generated response about places to visit in San Francisco]
+   [AI-generated response about history of San Jose, California]
+
+   ![Query Example](/images/Image%201.png)
 
 5. The bot remembers context from previous messages:
 
