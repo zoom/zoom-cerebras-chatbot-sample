@@ -1,10 +1,8 @@
-const { callAnthropicAPI } = require('./anthropic');
-
-async function handleZoomWebhook(req, res) {
+const { callCohereAPI } = require('./cohere');async function handleZoomWebhook(req, res) {
   try {
     if (req.body.event === 'bot_notification') {
       console.log('Zoom Team Chat App message received.');
-      await callAnthropicAPI(req.body.payload);
+      await callCohereAPI(req.body.payload);
     } else if (req.body.event === 'bot_installed') {
       console.log('Zoom for Team Chat installed.');
     } else if (req.body.event === 'app_deauthorized') {

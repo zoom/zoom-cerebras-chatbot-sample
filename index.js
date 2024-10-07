@@ -3,6 +3,8 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const { handleZoomWebhook } = require('./src/zoomWebhookHandler');
+const { callCohereAPI } = require('./src/cohere');
+
 
 
 const app = express();
@@ -15,6 +17,6 @@ app.get('/', (req, res) => {
 });
 
 // Webhook endpoint for Zoom events
-app.post('/anthropic', handleZoomWebhook);
+app.post('/cohere', handleZoomWebhook);
 
 app.listen(port, () => console.log(`Zoom for Team Chat listening on port ${port}!`));
