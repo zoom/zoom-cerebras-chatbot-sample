@@ -33,6 +33,7 @@ Before you can use this chatbot, you'll need the following:
 First, clone the repository:
 
 git clone https://github.com/zoom/zoom-cerebras-chatbot
+
 cd zoom-cerebras-chatbot
 
 Next, install the required Node.js packages:
